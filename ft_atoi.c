@@ -6,11 +6,13 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 14:54:55 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/01 15:09:12 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/14 22:15:43 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// A função ft_atoi converte uma representação de string de um número inteiro em seu valor inteiro correspondente.
 
 int	ft_atoi(const char *str)
 {

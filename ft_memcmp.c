@@ -6,11 +6,14 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 21:24:13 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/01 17:28:07 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/14 22:10:08 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// A função ft_memcmp compara duas áreas de memória e retorna a diferença entre
+// o primeiro byte diferente, se houver, ou 0 se as áreas de memória forem iguais.
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

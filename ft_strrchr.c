@@ -6,11 +6,13 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 18:14:59 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/01 14:21:04 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/14 22:02:17 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// A função ft_strrchr procura a última ocorrência de um caractere específico em uma string.
 
 char	*ft_strrchr(const char *s, int c)
 {

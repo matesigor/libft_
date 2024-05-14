@@ -6,11 +6,13 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 19:03:05 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/01 14:38:42 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/14 22:03:48 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// A função ft_strncmp compara duas strings até um comprimento especificado.
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
