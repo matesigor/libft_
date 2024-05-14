@@ -6,13 +6,11 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 23:47:28 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/14 21:23:30 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/14 21:35:38 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// A função ft_toupper converte um caractere minúsculo em seu equivalente maiúsculo.
 
 int	ft_toupper(int c)
 {
