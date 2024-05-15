@@ -6,13 +6,11 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 19:50:49 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/14 22:07:00 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/15 23:29:57 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// A função ft_memchr procura a primeira ocorrência de um caractere específico em um bloco de memória.
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -21,12 +19,13 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	ptr = s;
 	i = 0;
-	while (i < n && ptr[i] != (unsigned char)c)
+	while (i < n)
+	{
+		if ((unsigned char)ptr[i] == (unsigned char)c)
+			return ((char *)s + i);
 		i++;
-	if (i < n)
-		return ((void *)(ptr + i));
-	else
-		return (NULL);
+	}
+	return (NULL);
 }
 /*
 int	main(void)

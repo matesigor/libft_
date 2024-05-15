@@ -6,14 +6,11 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 15:39:52 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/14 22:14:42 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/16 00:33:40 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// A função ft_strnstr procura a primeira ocorrência de uma substring dentro de
-// uma determinada string, até um comprimento especificado.
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -48,6 +45,6 @@ int main ()
 
 	printf("Source: %s \n", str_src);
 	printf("Vai procurar: %s \n",  str_find);
-	printf("Achou: %s \n", ft_strnstr(str_src, str_find, 4));
+	printf("Achou: %s \n", ft_strnstr(str_src, str_find, sizeof(str_src)));
 	return (0);
 }*/
