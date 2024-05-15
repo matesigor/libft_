@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 23:46:03 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/15 18:05:26 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/15 20:33:48 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
+/*
 int main(void) {
 	printf("%d\n", ft_strlen("Internacional"));
 	printf("%d\n", strlen("Internacional"));
-}
+}*/

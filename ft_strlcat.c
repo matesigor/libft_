@@ -6,14 +6,11 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 17:16:05 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/14 21:14:00 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/15 22:46:19 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// A função ft_strlcat anexa uma string da origem ao destino com um limite
-// de tamanho especificado, garantindo a terminação nula adequada.
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -39,8 +36,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 }
 /*
 int	main(void) {
-    char dest[20] = "Hello, ";
-    const char *src = "world!";
+    char dest[20] = "Inter";
+    const char src[20] = ", o maior";
     size_t total_len = ft_strlcat(dest, src, sizeof(dest));
 
     printf("String concatenada: %s\n", dest);

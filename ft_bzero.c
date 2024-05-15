@@ -6,37 +6,36 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 14:50:45 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/14 19:39:39 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/15 18:49:04 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// A função ft_bzero define um bloco de memória como zero.
-
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*p;
+	unsigned char	*ptr;
 
-	p = s;
+	ptr = (unsigned char *)s;
 	while (n > 0)
 	{
-		*p++ = 0;
-		--n;
+		*ptr = 0;
+		ptr++;
+		n--;
 	}
 }
 /*
 int	main(void)
 {
-    char buffer[20];
-    ft_bzero(buffer, 10);
-    ft_bzero(buffer + 10, 5);
-    printf("%s\n", buffer);
+    char str[20];
+    ft_bzero(str, 10);
+    ft_bzero(str + 10, 5);
+    printf("%s\n", str);
 
 	//Funcao original
-	char buffer1[20];
-    bzero(buffer1, 10);
-    bzero(buffer1 + 10, 5);
-    printf("%s\n", buffer1);
+	char str1[20];
+    bzero(str1, 10);
+    bzero(str1 + 10, 5);
+    printf("%s\n", str1);
     return (0);
 }*/

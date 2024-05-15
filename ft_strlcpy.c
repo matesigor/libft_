@@ -6,27 +6,20 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 16:17:48 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/14 21:11:26 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/15 22:23:01 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// A função ft_strlcpy copia uma string da origem para o destino
-// com um limite de tamanho especificado.
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	len;
 	size_t	i;
 
-	len = 0;
-	while (src[len] != '\0')
-		len++;
+	len = ft_strlen(src);
 	if (size == 0)
-	{
 		return (len);
-	}
 	i = 0;
 	while (src[i] != '\0' && i < size - 1)
 	{
@@ -40,9 +33,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 /*
 int	main(void)
 {
-    char dest[10] = "manga";
-    char src[10] = "abacates";
-    size_t size = 25;
+	char src[15] = "O maior";
+    char dest[15] = "Internacional";
+    size_t size = 20;
 
     printf("Antes:%s\n", dest);
     printf("%zu\n", ft_strlcpy(dest, src, size)); 

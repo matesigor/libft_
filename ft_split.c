@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 13:01:07 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/14 21:07:55 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/15 21:21:56 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ char	**ft_split(char const *s, char c)
 	result[i] = NULL;
 	return (result);
 }
-
+/*
 int	main()
 {
 	char **result;
@@ -78,4 +78,4 @@ int	main()
     }
     else
         printf("Erro: a função ft_split retornou NULL\n");
-}
+}*/
