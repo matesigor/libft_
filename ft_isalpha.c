@@ -6,13 +6,11 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 23:40:58 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/13 19:57:18 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/15 17:40:03 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-//A função ft_isalpha verifica se determinado caractere é alfabético.
 
 int	ft_isalpha(int c)
 {
