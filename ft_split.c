@@ -6,65 +6,87 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 13:01:07 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/15 21:21:56 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/16 22:16:47 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_countword(char const *s, char c)
+static int	ft_wordcount(char const *s, char c)
 {
-	size_t	count;
+	int	count;
+	int	i;
 
-	if (!*s)
-		return (0);
+	i = 0;
 	count = 0;
-	while (*s)
+	while (s[i])
 	{
-		while (*s == c)
-			s++;
-		if (*s)
+		if (s[i] != c)
+		{
 			count++;
-		while (*s != c && *s)
-			s++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
+		else
+			i++;
 	}
 	return (count);
 }
 
+static int	ft_wordlen(char const *s, char c)
+{
+	int	i;
+
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	return (i);
+}
+
+static char	**ft_free(char **str, int i)
+{
+	while (i >= 0)
+	{
+		free(str[i]);
+		i--;
+	}
+	free(str);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	char	**result;
-	size_t	word_len;
+	char	**str;
 	int		i;
+	int		j;
 
-	result = (char **)malloc((ft_countword(s, c) + 1) * sizeof(char *));
-	if (!s || !result)
-		return (NULL);
 	i = 0;
-	while (*s)
+	j = 0;
+	str = (char **)ft_calloc((ft_wordcount(s, c) + 1), sizeof(char *));
+	if (!s || !str)
+		return (NULL);
+	while (s[i])
 	{
-		while (*s == c && *s)
-			s++;
-		if (*s)
+		if (s[i] != c)
 		{
-			if (!ft_strchr(s, c))
-				word_len = ft_strlen(s);
-			else
-				word_len = ft_strchr(s, c) - s;
-			result[i++] = ft_substr(s, 0, word_len);
-			s += word_len;
+			str[j] = ft_substr(s, i, ft_wordlen(&s[i], c));
+			if (!str[j])
+				return (ft_free(str, j));
+			j++;
+			i += ft_wordlen(&s[i], c);
 		}
+		else
+			i++;
 	}
-	result[i] = NULL;
-	return (result);
+	str[j] = 0;
+	return (str);
 }
 /*
 int	main()
 {
 	char **result;
-    // Teste com uma string simples
-    printf("Teste 1:\n");
-    result = ft_split("Isabella neves ribeiro", 'e');
+    printf("Splits:\n");
+    result = ft_split("Inter maior do mundo", ' ');
     if (result)
     {
         int i = 0;
@@ -78,4 +100,6 @@ int	main()
     }
     else
         printf("Erro: a função ft_split retornou NULL\n");
+	//Teste: cc ft_split.c ft_substr.c ft_strlcpy.c
+	//ft_strlen.c ft_strdup.c ft_calloc.c ft_bzero.c
 }*/
