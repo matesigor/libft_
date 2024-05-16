@@ -6,32 +6,29 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 20:46:05 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/13 20:55:06 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/16 12:52:38 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// A função ft_strtrim corta caracteres iniciais e finais
-// de uma string com base em um determinado conjunto de caracteres
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*trimmed;
-	size_t	start;
-	size_t	end;
+	size_t	i;
+	size_t	len;
 
 	if (!s1)
 		return (NULL);
 	if (!set)
 		return (ft_strdup(s1));
-	end = ft_strlen(s1) - 1;
-	start = 0;
-	while (s1[start] && ft_strchr(set, s1[start]))
-		++start;
-	while (s1[end] && ft_strchr(set, s1[end]))
-		--end;
-	trimmed = ft_substr(s1, start, end - start + 1);
+	len = ft_strlen(s1) - 1;
+	i = 0;
+	while (s1[i] && ft_strchr(set, s1[i]))
+		i++;
+	while (s1[len] && ft_strchr(set, s1[len]))
+		len--;
+	trimmed = ft_substr(s1, i, len - i + 1);
 	return (trimmed);
 }
 /*

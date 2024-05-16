@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_ft.c                                    :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 19:25:56 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/03 19:50:19 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:03:44 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,12 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (s)
-	{
-		while (*s)
-			write(fd, s++, 1);
-		write(fd, "\n", 1);
-	}
+	ft_putstr_fd (s, fd);
+	ft_putchar_fd ('\n', fd);
 }
-
 /*
 int	main(void)
 {
-	ft_putendl_fd("hello", 0);
-	ft_putendl_fd("hello", 1);
-	ft_putendl_fd("hello", 2);
-	//3 not in terminal
-	ft_putendl_fd("hello", 3);
+	ft_putendl_fd("Inter", 1);
+	return (0);
 }*/

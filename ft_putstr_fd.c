@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 19:51:36 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/03 20:04:59 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/16 13:58:58 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s)
-		return ;
 	write(fd, s, ft_strlen(s));
 }
 /*
 int	main(void)
 {
-    ft_putstr_fd("h", 1);
+    ft_putstr_fd("Vmaos meu Inter!\n", 1);
 }*/

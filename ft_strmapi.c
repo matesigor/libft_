@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/07 12:57:07 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/09 21:20:37 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/16 13:48:12 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,45 +15,41 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char			*result;
+	char			*str;
 
-	i = 0;
-	while (s[i])
-		i++;
-	result = (char *)malloc(i + 1);
-	if (result == NULL)
+	if (!s)
+		return (NULL);
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (str == NULL)
 		return (NULL);
 	i = 0;
 	while (s[i])
 	{
-		result[i] = f(i, s[i]);
+		str[i] = f(i, s[i]);
 		i++;
 	}
-	result[i] = '\0';
-	return (result);
+	str[i] = '\0';
+	return (str);
 }
 /*
 char	uppercase(unsigned int index, char c)
 {
     if (c >= 'a' && c <= 'z') {
-        return (c - 32); // Convertendo para maiúscula
+        return (c - 32);
     } else {
-        return (c); // Mantendo outros caracteres inalterados
+        return (c);
     }
 }
 int	main(void)
 {
-    char original[] = "Hello, world!";
+    char original[] = "inter, gigante!";
     char *modified;
 
-    // Aplicando a função ft_strmapi para modificar a string original
     modified = ft_strmapi(original, uppercase);
 
-    // Imprimindo a string original e a string modificada
     printf("Original: %s\n", original);
     printf("Modified: %s\n", modified);
 
-    // Liberando a memória alocada para a string modificada
     free(modified);
 
     return (0);

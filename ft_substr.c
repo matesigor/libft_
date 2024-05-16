@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 17:54:05 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/03 19:03:22 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/16 11:51:47 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /*
 int	main(void)
 {
-    const char *str = "Hello, World!";
+    const char *str = "Inter, Maior!";
     int start = 7;
     int length = 6;
 
