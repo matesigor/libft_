@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 13:01:07 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/22 15:26:34 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/22 23:19:49 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ char	**ft_split(char const *s, char c)
 		else
 			i++;
 	}
-	str[j] = '\0';
+	str[j] = NULL;
 	return (str);
 }
 /*
