@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 17:54:05 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/16 11:51:47 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/20 22:52:52 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ int	main(void)
     int length = 6;
 
     char *sub = ft_substr(str, start, length);
-    if (sub != NULL) {
+    if (sub != NULL) 
+	{
         printf("Substring: %s\n", sub);
         free(sub); 
-    } else {
+    } 
+	else
         printf("Índice de início inválido.\n");
-    }
-
     return (0);
 }*/

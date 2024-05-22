@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 18:14:34 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/15 22:01:45 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/20 20:52:25 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main () {
 
    printf("Antes da memmove src = %s, dest = %s\n", src, dest);
    ft_memmove(dest, src, 3);
-   printf("Depois memmove src = %s, dest = %s\n", src, dest);
+   printf("Depois mem.move src = %s, dest = %s\n", src, dest);
 
    return(0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 14:54:55 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/16 00:10:08 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/17 00:27:22 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,15 +41,9 @@ int	ft_atoi(const char *str)
 	return (res * sign);
 }
 /*
-int	main(int argc, char *argv[1])
+int	main()
 {
-	if (argc == 2)
-	{
-		printf("%d", ft_atoi(argv[1]));
-	}
-	else
-	{
-		write(1, "\n", 1);
-	}
-	return (0);
+	char *str = "-42763264";
+
+	printf("Nmr: %d\n", ft_atoi(str));
 }*/

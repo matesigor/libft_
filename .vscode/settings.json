@@ -5,6 +5,8 @@
         "ctype.h": "c",
         "stdlib.h": "c",
         "libft.h": "c",
-        "ft_lstclear.C": "cpp"
+        "ft_lstclear.C": "cpp",
+        "stddef.h": "c",
+        "string.h": "c"
     }
 }

@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 17:44:03 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/09 21:13:14 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/21 23:28:10 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
     // Criando um novo nó da lista
-    t_list *node = ft_lstnew("Hello, world!");
+    t_list *node = ft_lstnew("Vamo, inter");
 
     // Verificando se o nó foi criado com sucesso
     if (node == NULL)
@@ -45,4 +45,4 @@ int	main(void)
     free(node);
 
     return (0);
-}*/
+} */
