@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 13:01:07 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/22 13:54:38 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/22 15:26:34 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	str = (char **)malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
+	str = malloc((ft_wordcount(s, c) + 1) * sizeof(char *));
 	if (!s || !str)
 		return (NULL);
 	while (s[i])

@@ -6,7 +6,7 @@
 /*   By: iwietzke <iwietzke@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 20:46:05 by iwietzke          #+#    #+#             */
-/*   Updated: 2024/05/21 22:10:05 by iwietzke         ###   ########.fr       */
+/*   Updated: 2024/05/22 15:42:03 by iwietzke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 /*
 int	main(void)
 {
-    char str[] = "Internacional";
-    char set[] = "nacional";
+    char str[] = "---Internacional-";
+    char set[] = "-";
 
     char *trimmed_str = ft_strtrim(str, set);
 
@@ -47,6 +47,7 @@ int	main(void)
     }
     else
         printf("Erro\n");
-
+	//cc ft_strtrim.c ft_strchr.c ft_substr.c
+	//ft_strlcpy.c ft_strlen.c ft_strdup.c
     return (0);
 }*/
